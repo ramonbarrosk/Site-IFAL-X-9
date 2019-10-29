@@ -35,51 +35,13 @@
 			<div class="wrap-login100 p-t-85 p-b-20">
 				<form class="login100-form validate-form" action="cadastro.php">
 					<span class="login100-form-title p-b-70">
-						IFamília Administrador
+						MENU DE NOTIFICAÇÃO
 					</span>
 					<span class="login100-form-avatar">
-						<img src="images/avatar-01.jpg" alt="AVATAR">
+						<img src="images/icons/not.png" alt="AVATAR">
 					</span>
 
-					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Entre com o usuário">
-						<input class="input100" type="text" name="username">
-						<span class="focus-input100" data-placeholder="Nome "></span>
-					</div>
-
-					<div class="wrap-input100 validate-input m-b-50" data-validate="Entre com a função">
-						<input class="input100" type="text" name="function">
-						<span class="focus-input100" data-placeholder="Função"></span>
-                    </div>
-                    <div class="wrap-input100 validate-input m-b-65" data-validate="Entre com a senha">
-						<input class="input100" type="text" name="code">
-						<span class="focus-input100" data-placeholder="Código"></span>
-                    </div>
-                    <div class="wrap-input100 validate-input m-b-65" data-validate="Entre com a senha">
-						<input class="input100" type="password" name="pass">
-						<span class="focus-input100" data-placeholder="Senha"></span>
-                    </div>
-                    <div class="wrap-input100 validate-input m-b-65" data-validate="Confirme sua senha">
-						<input class="input100" type="password" name="pass">
-						<span class="focus-input100" data-placeholder="Confirmar Senha"></span>
-					</div>
-
-					<div class="container-login100-form-btn">
-						<button type="submit" id="registrar" class ="login100-form-btn">
-
-							Cadastrar
-						</button>
-						
-					</div>
-
-					<ul class="login-more p-t-190">
-						<li class="m-b-8">
-							<a href="index.html" class="txt2"><h3>Voltar</h3></a>
-							
-						</li>
-
-						
-					</ul>
-				</form>
+					
 			</div>
 		</div>
 	</div>
