@@ -68,3 +68,7 @@
     
     
 })(jQuery);
+
+
+var requestURL = 'https://apisig.ifal.edu.br/v1/login_aluno/ramonbarrosk/';
+document.write(requestURL);
