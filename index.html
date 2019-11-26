@@ -30,6 +30,8 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/senha.js"></script>
+	<script src="js/api_sigaa.js"></script>
 <!--===============================================================================================-->
 </head>
 <body>
@@ -39,7 +41,7 @@
 			<div class="wrap-login100 p-t-85 p-b-20">
 
 				
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" action="gerencia.php">
 					<span class="login100-form-title p-b-70">
 						IFamília
 					</span>
@@ -58,7 +60,7 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<a href="menu.html"><button class="login100-form-btn" type="button" onclick="cript()">Entrar</button></a>
+						<button class="login100-form-btn" type="button" onclick="cript()">Entrar</button>
 					</div>
 
 					<ul class="login-more p-t-190">
@@ -70,37 +72,16 @@
 						
 					</ul>
 				</form>
-				<div id="myass">
-					
-				</div>
+				<h1 id= "senha">SENHA CRIPTOGRAFADA</h1>
 			</div>
 		</div>
 	</div>
-	<script>
-        function retorna(){
-            $.getJSON("https://apisig.ifal.edu.br/v1/login_aluno/ramobarrosk23/128;106;117;103;116;121;58;51;58;", function(data){
-            var nomes = [];
-            nomes.push(data.id_pessoa);
-            nomes.push(data.nome);
-            nomes.push(data.social);
-            nomes.push(data.email);
-
-			var id_pessoa = nomes[0];
-			var nome = nomes[1];
-			var nome_social = nomes[2];
-			var email = nomes[3];
-            
-            }
-            
-        )};
-    </script>
 	
 	
 
 	
- <script src="js/cript.js"></script>
-	<div id="dropDownSelect1"></div>
-	
+
+ <div id="dropDownSelect1"></div>
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->

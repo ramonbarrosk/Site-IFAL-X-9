@@ -1,4 +1,5 @@
 
+		
 		function cript(){
             var nome = "";
             nome = document.getElementById("nome").value;
@@ -26,10 +27,18 @@
 				}
 				
 				var login = new Login();
-				console.log(senha);
-                var senha_cript = login.encryptData(senha);
-                $('#myass').append(senha_cript);
-                $('menu').append("Bem vindo"+nome);
+			    var senha_cript = login.encryptData(senha);
+				$('#senha').html(senha_cript);
+				$('#pass').html(senha_cript);
+		
+				
+				
+				
 				
 
 		}
+
+	
+
+
+		
