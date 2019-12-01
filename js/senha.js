@@ -1,5 +1,5 @@
 
-		
+		 
 		function cript(){
             var nome = "";
             nome = document.getElementById("nome").value;
@@ -29,9 +29,9 @@
 				var login = new Login();
 			    var senha_cript = login.encryptData(senha);
 				$('#senha').html(senha_cript);
-				$('#pass').html(senha_cript);
-		
 				
+		
+				validaUser(nome,senha_cript);
 				
 				
 				

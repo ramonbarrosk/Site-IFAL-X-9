@@ -29,13 +29,24 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="/js/cript.js"></script>
+    <script src="js/api_sigaa.js"></script>
+     <script src="js/senha.js"></script>
+
 <!--===============================================================================================-->
 </head>
 <body>
 	
 	<div id="menu">
 		<h1>Bem vindo</h1>
+		<h2 id="usuario">Usuário</h2>
+
+		<li>
+			<a href="">Boletim</a>
+			<a href="">Acesso</a>
+			<a href=""> Informações</a>
+
+
+		</li>
 		
     </div>
     
@@ -43,25 +54,6 @@
 
 
 
-	<script>
-        function retorna(){
-            $.getJSON("https://apisig.ifal.edu.br/v1/login_aluno/ramobarrosk23/128;106;117;103;116;121;58;51;58;", function(data){
-            var nomes = [];
-            nomes.push(data.id_pessoa);
-            nomes.push(data.nome);
-            nomes.push(data.social);
-            nomes.push(data.email);
-
-			var id_pessoa = nomes[0];
-			var nome = nomes[1];
-			var nome_social = nomes[2];
-			var email = nomes[3];
-            
-            }
-            
-        )};
-    </script>
-	
 
 	
 

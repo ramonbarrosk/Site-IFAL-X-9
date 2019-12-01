@@ -1,5 +1,6 @@
-function retorna(){
-    $.getJSON("https://apisig.ifal.edu.br/v1/login_aluno/ramobarrosk23/128;106;117;103;116;121;58;51;58;", function(data){
+function mostraInfo(nome,senha){
+    
+    $.getJSON("https://apisig.ifal.edu.br/v1/login_aluno/"+nome+"/"+senha, function(data){
     var nomes = [];
     nomes.push(data.id_pessoa);
     nomes.push(data.nome);
@@ -10,7 +11,36 @@ function retorna(){
     var nome = nomes[1];
     var nome_social = nomes[2];
     var email = nomes[3];
+
+    console.log(id_pessoa);
     
     }
     
 )};
+
+
+
+function validaUser(nome,senha){
+    
+    $.getJSON("https://apisig.ifal.edu.br/v1/login_aluno/"+nome+"/"+senha, function(data){
+    console.log(data);
+
+    if (data.error == "Usu\u00e1rio e\/ou senha inv\u00e1lidos"){
+        console.log("Usuário inválido!")
+    }else{
+        console.log("Usuário válido!")
+        $('#usuario').html(nome);
+        window.location="menu.html";
+    }
+    
+    }
+    
+)};
+
+
+    
+
+
+
+
+
