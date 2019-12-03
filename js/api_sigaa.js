@@ -30,7 +30,7 @@ function validaUser(nome,senha){
     }else{
         console.log("Usuário válido!")
         $('#usuario').html(nome);
-        window.location="menu.html";
+       window.location="menu.html";
     }
     
     }
