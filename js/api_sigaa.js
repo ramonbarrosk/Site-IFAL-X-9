@@ -23,14 +23,23 @@ function mostraInfo(nome,senha){
 function validaUser(nome,senha){
     
     $.getJSON("https://apisig.ifal.edu.br/v1/login_aluno/"+nome+"/"+senha, function(data){
-    console.log(data);
+  
 
     if (data.error == "Usu\u00e1rio e\/ou senha inv\u00e1lidos"){
         console.log("Usuário inválido!")
+      
+         
+        Swal.fire({
+            icon: 'error',
+            title: 'Usuário inválido!',
+           
+            footer: '<a href>Você está cadastrado no SIGAA?</a>'
+          })
     }else{
         console.log("Usuário válido!")
+        console.log(data);
         $('#usuario').html(nome);
-       window.location="menu.html";
+         window.location="menu.html";
     }
     
     }
